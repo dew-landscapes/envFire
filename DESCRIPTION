@@ -1,11 +1,37 @@
 Package: envFire
-Title: What the Package Does (One Line, Title Case)
+Title: Functions to facilitate ecological fire analysis
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    c(
+    person(given = "Joel", family = "Allan"
+    , role = c("aut", "cre")
+    , email = "joel.allan@sa.gov.au"
+    ),
+    person(family = "DEW"
+    , role = "cph"
+    )
+    )
+Description: Functions to facilitate ecological fire analysis
+License: `use_mit_license()`, `use_gpl3_license()`
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
+Imports: 
+    dplyr,
+    magrittr,
+    purrr,
+    furrr,
+    rlang,
+    sf,
+    tibble,
+    tidyr,
+    future,
+    igraph
+Depends: 
+    R (>= 4.5.2)
+Suggests: 
+    envFunc (>= 0.0.0.9000)
+Remotes: 
+    github::dew-landscapes/envFunc
+URL: https://github.com/dew-landscapes/envFire
+BugReports: https://github.com/dew-landscapes/envFire/issues
